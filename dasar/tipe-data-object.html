@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Object</title>
+</head>
+
+<body>
+    <script>
+        const orang = {
+            "nama": "M Ilyas",
+            alamat: "Indonesia",
+            umur: 30,
+        };
+
+        // Menambah atau mengubah
+        // orang["nama"] = "M Ilyas";
+        // orang["alamat"] = "Indonesia";
+        // orang["umur"] = 30;
+
+        console.log(`Nama : ${orang.nama}`);
+        console.log(`Alamat : ${orang.alamat}`);
+        console.log(`Umur : ${orang.umur}`);
+
+        console.table(orang);
+
+        // Menghapus Data Delete
+        delete orang["umur"];
+        console.table(orang);
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator In</title>
+</head>
+
+<body>
+    <script>
+        // contoh dengan data yang benar saat pengecekan
+        const person = {
+            firstName: "Ilyas",
+            alamat: "Indonesia",
+        };
+
+        const result = "firstName" in person;
+        if ("firstName" in person) {
+            alert(`Hello ${person.firstName}`);
+        } else {
+            alert("Hello");
+        }
+
+        // Contoh untuk cek dengan undefined
+        const student = {
+            firstName: "Ilyas",
+            middleName: undefined,
+            lastName: "Arrafii",
+        }
+
+        if ("middleName" in student) {
+            alert(`Hello : ${student.middleName}`);
+        } else {
+            alert("Hello Student");
+        }
+
+        // Jika Array dengan value null atau undefined jika di cek oleh operator in akan tetap dibaca true 
+        const names = [null, "Ilyas", null];
+        const results = 0 in names;
+        document.writeln(`<p>${results}</p>`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+
+        let arrayKosong = [];
+        let arrayName = ["Ilyas", "Arrafii", "1"];
+
+        // console.table(arrayName);
+
+        /*
+        array dinamis
+        */
+
+        const tampungNama = [];
+        tampungNama.push("Ilyas");
+        tampungNama.push("Ar", "Rafii");
+
+        console.table(tampungNama);
+
+        /*
+        operasi di array contoh
+        */
+        console.log(tampungNama[0]);
+        console.log(tampungNama[1]);
+        console.log(tampungNama[2]);
+
+        tampungNama[0] = "Rawon";
+        tampungNama[1] = "Sate";
+        tampungNama[2] = "Gule";
+        console.table(tampungNama);
+
+        //delete data array yang dipilih
+        delete tampungNama[1];
+        console.table(tampungNama); //tampil data delete
+
+        // push array data baru
+        tampungNama.push("Soto");
+        console.table(tampungNama); //tampung console push array data baru
+
+        // mengembalikkan data delete dengan data terserah
+        tampungNama[1] = "Tambah Data";
+        console.table(tampungNama); //tampung console table dengan mengembalikkan data
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+
+<body>
+    <script>
+        const name = "M Ilyas Zainul Ar Rafii";
+
+        const firstName = "M Ilyas";
+        const middleName = "Zainul";
+        const lastName = "Ar Rafii L";
+
+        const stringTemplateName = `Name : ${name}`;
+        const stringTemplate = `Name : ${firstName} ${middleName} ${lastName}`;
+
+
+        console.log(stringTemplateName);
+        console.log(stringTemplate);
+
+        const nilai = 80;
+        const stringTemplateEspression = `Name : ${name} ${nilai > 70}`;
+
+        console.log(stringTemplateEspression);
+
+        const nameMultiLine = `Nama : ${name},
+        firstname ${firstName} ,
+        middlename ${middleName},
+        lastname ${lastName}`;
+
+        document.writeln("<pre>");
+        document.writeln(nameMultiLine);
+        document.writeln("</pre>");
+    </script>
+</body>
+
+</html>

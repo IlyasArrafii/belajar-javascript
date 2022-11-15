@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcion Return</title>
+</head>
+
+<body>
+    <script>
+        // Function 1
+        function sayHello(firstName, lastName) {
+            const tampungValue = `<p>${firstName} ${lastName}</p>`;
+            return tampungValue;
+        }
+
+        const result = sayHello("Ilyas", "Arrafii");
+        document.writeln(`<p>${result}</p>`);
+
+        // function 2
+        function getFinalScore(value) {
+
+            if (value > 90) {
+                return "A";
+            } else if (value > 80) {
+                return "B";
+            } else if (value > 70) {
+                return "C";
+            } else if (value > 60) {
+                return "D";
+            } else {
+                return "E";
+            }
+        }
+
+        const finalValue = getFinalScore(85);
+        document.writeln(`<p>${finalValue}</p>`);
+
+        // function 3
+        function isContains(array, searchValue) {
+            for (const elements of array) {
+                if (elements === searchValue) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        const array = [1, 33, 55, 35, 67, 8, 9, 64, 123, 345, 62];
+        const search = 10;
+        const found = isContains(array, search);
+        document.writeln(`<p>${found}</p>`);
+
+    </script>
+</body>
+
+</html>
