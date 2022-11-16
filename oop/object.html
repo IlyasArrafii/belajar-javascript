@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+
+<body>
+    <script>
+
+        // Parameter Menggunakan Constructor Function
+        function Person(firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+
+            // Constructor Function
+            this.sayHello = function (name) {
+                console.info(`Hello ${name}, my name is ${this.firstName}`);
+            }
+        }
+
+        const ilyas = new Person("Ilyas", "Arrafii");
+        // Menggunakan Property 
+        // ilyas.firstName = "Ilyas";
+        // ilyas.lastName = "Arrafii";
+        ilyas.sayHello("Joko");
+
+        const budi = new Person("Budi", "Nugraha");
+        budi.sayHello("Joko");
+
+        console.log(ilyas);
+        console.log(budi);
+
+
+        // function Person() {
+
+        // }
+        // const ilyas = new Person();
+        // const arrafii = new Person();
+
+    </script>
+</body>
+
+</html>
